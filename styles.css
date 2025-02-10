@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;
+    color: #003366; 
+}
+
+footer p{
+ 
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+/* Type selector */
+body {
+    /* Hex color */
+     background-color: #f0f8ff; 
+
+    /* Font property 1 */
+    font-family: Arial, sans-serif; 
+
+    /* Relative unit */
+    font-size: 1rem; 
+    margin: 0;
+    padding: 1rem;
+}
+
+/* Class selector*/
+.header {
+    color: rgb(34, 34, 34);
+    font-weight: bold; 
+
+    /* Align Text */
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+/* Relational selector*/
+main ul {
+    margin-left: 2rem; 
+    padding: 0;
+}
+
+/* Combination selector*/
+main p.highlight {
+    font-style: italic;
+    font-size: 1.1rem; 
+}
+
+/* On link hover, change color (had to google this one)*/
+a:hover {
+    color: #ff5733;
+}
+
+
+
+
+
+
+
+
