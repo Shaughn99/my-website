@@ -1,22 +1,21 @@
 h1 {
     text-align: center;
-    color: #003366; 
+    color: #463f3a; 
+    margin-bottom: 5rem
 }
 
 footer p{
  
     font-family: Georgia, serif;
     text-align: center;
+    border: 1px solid #8a817c;
 }
 
 /* Type selector */
 body {
-    /* Hex color */
-     background-color: rgb(255, 255, 255)
-
+     background: linear-gradient(to left, #f4f3ee, #e0afa0);
     /* Font property 1 */
     font-family: Arial, sans-serif; 
-
     /* Relative unit */
     font-size: 1rem; 
     margin: 0;
@@ -36,7 +35,7 @@ body {
 /* Relational selector*/
 main ul {
     margin-left: 2rem; 
-    padding: 0;
+    padding: .5rem;
 }
 
 /* Combination selector*/
@@ -50,7 +49,9 @@ a:hover {
     color: #ff5733;
 }
 
-
+p {
+    padding: .5rem;
+}
 
 
 
