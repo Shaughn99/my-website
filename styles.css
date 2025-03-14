@@ -1,60 +1,135 @@
-h1 {
-    text-align: center;
-    color: #463f3a; 
-    margin-bottom: 5rem
-}
-
-footer p{
- 
-    font-family: Georgia, serif;
-    text-align: center;
-    border: 1px solid #8a817c;
-}
-
-/* Type selector */
+/*Global Styles (applies to all pages)*/
 body {
-     background: linear-gradient(to left, #f4f3ee, #e0afa0);
-    /* Font property 1 */
     font-family: Arial, sans-serif; 
-    /* Relative unit */
     font-size: 1rem; 
     margin: 0;
     padding: 1rem;
+    color: #333;
 }
 
-/* Class selector*/
-.header {
-    color: rgb(34, 34, 34);
-    font-weight: bold; 
-
-    /* Align Text */
-    text-align: left;
-    margin-bottom: 1rem;
+/*navigation style*/
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
-/* Relational selector*/
-main ul {
-    margin-left: 2rem; 
-    padding: .5rem;
+#nav_menu ul li {
+    float: left;
+    position: relative;
 }
 
-/* Combination selector*/
-main p.highlight {
-    font-family: sans-serif;
-    font-size: 1.1rem; 
+#nav_menu ul li a {
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333;
 }
 
-/* On link hover, change color (had to google this one)*/
-a:hover {
-    color: #ff5733;
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
 }
 
-p {
-    padding: .5rem;
+#nav_menu ul ul li {
+    float: none;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+
+/*floats for navigation*/
+#nav_menu::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
+/* Homepage background (index.html) */
+.home {
+    background: linear-gradient(to bottom, #d8fff7, #aee7e8);
+}
 
 
+/* Models page background (page2.html) */
+.models-page {
+    background-image: url("Photos/hexagonbackground.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+/* Generic "under construction" page background*/
+.under-construction {
+    background-color: #fcfcfc;
+}
 
+/*Common Responsive Columns*/
+.columns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.column {
+    flex: 1;
+    min-width: 250px; 
+    max-width: 350px; 
+    text-align: center;
+    margin: 1em;
+    padding: 2em;
+    color: #ffffff;
+    border: thick outset #000000;
+}
+
+/* Specific model columns */
+#model1 { background-color: #251101; }
+#model2 { background-color: #470024; }
+#model3 { background-color: #343434; }
+
+/*Images*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Responsive layout adjustments*/
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #nav_menu ul li {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* Smaller screens (mobile) */
+@media (max-width: 480px) {
+    body {
+        padding: 0.5rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.half-size-scale {
+    width: 25%;
+    height: auto;
+}
+
+.model_title{
+    color: #88fff9;
+}
